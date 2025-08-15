@@ -16,7 +16,7 @@ db = client['data']
 def home():
 	try:
 		client.server_info()
-		# Obtener todas las sesiones sin pago
+		# Obtener todas la suma de las sesiones pendientes de pago
 		amount_due = list(db.Sessions.aggregate([{'$match': {'Payment': {'$exists': False} }},
 				{'$group': {'_id': None, 'amnt': {'$sum': '$TotalAmount'}}}]))[0]['amnt']
 		

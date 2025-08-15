@@ -1,7 +1,7 @@
 services:
   web:
     build: .
-    container_name: dibu2
+    container_name: payments
     ports:
       - "5000:5000"
     volumes:
