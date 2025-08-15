@@ -1,0 +1,11 @@
+services:
+  web:
+    build: .
+    container_name: dibu2
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./:/app
+    env_file:
+      - .env
+
