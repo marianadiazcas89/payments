@@ -22,7 +22,6 @@ def home():
 				{'$group': {'_id': None, 'amnt': {'$sum': '$TotalAmount'}}}]))[0]['amnt']
         except:
             amount_due = 0
-        print(amount_due)
 
 		today = datetime.now().strftime("%d/%m/%Y")
 		return render_template("home.html", today=today, amountDue=amount_due)
