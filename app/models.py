@@ -5,7 +5,6 @@ from bson import ObjectId
 from pymongo import MongoClient
 import os
 
-# Reutilizamos la conexión a la BD
 client = MongoClient(os.getenv("MONGO_URI"))
 db = client['data']
 users_collection = db.Users
