@@ -12,11 +12,13 @@
       <form id="registroForm" class="payment-form">
         <label for="proveedor">Provider:</label>
         <select id="proveedor" name="proveedor">
+
           <option value="">Select</option>
           {% for proveedor in proveedores %}
             <option value="{{ proveedor.id }}">{{ proveedor.nombre }}</option>
           {% endfor %}
         </select>
+
 
         <label for="fecha">Date:</label>
         <input type="date" id="fecha" name="fecha">
@@ -31,7 +33,7 @@
         </div>
         <button type="submit" class="btn">Register</button>
       </form>
-
+    
       <div class="confirmacion" id="mensaje"></div>
     </div>
   </div>

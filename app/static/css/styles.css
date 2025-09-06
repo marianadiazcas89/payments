@@ -2,53 +2,92 @@
   --x: 65%;
   --y: 35%;
 
-  /* your actual gradient definition */
-  --color-orangey: #ff8a4b; /* adjust to match your theme variable */
+   /* Color definition */
+  --color-blue: #00bae2;
+  --color-pink: #fec5fb;
+  --color-orangey: #ff8a4b;
+  --color-purple: #f7bdf8;
+  --color-blue: #00bae2;
+  --color-pink: #fec5fb;
+
+  /* Gradient definition */
   --gradient-orange-crush: linear-gradient(
     111.45deg,
     var(--color-orangey) 19.42%,
     #f7bdf8 73.08%
   );
 
-  --color-purple: #f7bdf8;
   --gradient-purple-haze: linear-gradient(
     153.58deg,
     var(--color-purple) 32.25%,
     #2f3cc0 92.68%
   );
-  
-}
 
-.gradient-purple {
-  min-height: 100svh;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  --gradient-skyfall: linear-gradient(
+    131.77deg,
+     #6b79ff 30.82%,
+      #15bfe4 81.82%);
+    
+   --gradient-summer-fair: linear-gradient(
+    131.77deg,
+     #6d44cf 30.82%,
+      #15bfe4 81.82%);   
+    }
 
-  background: var(--gradient-purple-haze),
-              url("https://assets.codepen.io/16327/noise.png");
-  background-blend-mode: color-dodge;
 
-  color: #fff;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-}
- 
+/* === Backgrounds === */
+    .gradient-purple {
+      min-height: 100svh;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--gradient-purple-haze),
+                  url("https://assets.codepen.io/16327/noise.png");
+      background-blend-mode: color-dodge;
+      color: #fff;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    }
+    
+    .gradient-orange {
+      min-height: 100svh;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--gradient-orange-crush),
+                  url("https://assets.codepen.io/16327/noise.png");
+      background-blend-mode: color-dodge;
+      color: #fff;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    }
 
-.gradient-orange {
-  min-height: 100svh;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    .gradient-summer-fair {
+      min-height: 100svh;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--gradient-summer-fair),
+                  url("https://assets.codepen.io/16327/noise.png");
+      background-blend-mode: color-dodge;
+      color: #fff;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    }
 
-  background: var(--gradient-orange-crush),
-              url("https://assets.codepen.io/16327/noise.png");
-  background-blend-mode: color-dodge;
+    .gradient-skyfall {
+      min-height: 100svh;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--gradient-skyfall),
+                  url("https://assets.codepen.io/16327/noise.png");
+      background-blend-mode: color-dodge;
+      color: #fff;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    }
 
-  color: #fff;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-}
 
 /* === Card / center column === */
 .center-box {
@@ -240,3 +279,58 @@ table tbody tr:nth-child(odd) {
   outline: none;
   box-shadow: 0 6px 16px rgba(0,0,0,0.2);
 }
+
+
+   /* 🚧🚧🚧🚧🚧🚧 START MODIFICATION */
+
+    .formulario {
+      justify-content: center;
+    }
+
+    .formulario label {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-bottom: 6px;
+      text-align: left;
+    }
+
+    .formulario input,
+    .formulario select {
+      display: block;
+      width: 100%;
+      padding: 12px 16px;
+      border-radius: 999px;
+      border: none;
+      margin-bottom: 16px;
+      font-size: 1rem;
+      font-weight: 500;
+      background-color: #fff;
+      color: #222;
+      box-shadow: 0 4px 12px rgba(0,0,0,.15);
+      appearance: none;
+    }
+
+    .formulario select {
+      background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23222' d='M1.41 0L6 4.59 10.59 0 12 1.41l-6 6-6-6z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 1rem center;
+      background-size: 10px;
+    }
+
+    .formulario input:focus,
+    .formulario select:focus {
+      outline: none;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .confirmacion {
+      margin-top: 1rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-align: center;
+      color: white;
+      min-height: 1.5em;
+    }
+
+    /* 🚧🚧🚧🚧🚧🚧 END MODIFICATION */
